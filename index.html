@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gematria Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gematria Calculator</h1>
+        <input type="text" id="hebrew-input" placeholder="Enter Hebrew letters">
+        <select id="gematria-type">
+            <option value="standard">Standard</option>
+            <option value="ordinal">Ordinal</option>
+            <option value="reduced">Reduced</option>
+            <option value="integralReduced">Integral Reduced</option>
+            <option value="small">Small</option>
+            <option value="absolute">Absolute</option>
+            <option value="atbash">Atbash</option>
+            <option value="albam">Albam</option>
+            <option value="avgad">Avgad</option>
+            <option value="ayakBakar">Ayak Bakar</option>
+            <option value="misparHaKadmi">Mispar HaKadmi</option>
+        </select>
+        <button onclick="calculateGematria()">Calculate</button>
+        <p id="result"></p>
+        <p id="description"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
